@@ -2,6 +2,9 @@ const loginForm = document.querySelector('.login-form');
 console.log(loginForm);
 
 const uname = document.querySelector("#uname").value;
+  console.log(uname);
+
+//const uname = loginForm.querySelector("#uname").value;
 console.log(uname);
 
 async function loginFormHandler(event) {
@@ -59,6 +62,33 @@ async function signupFormHandler(event) {
   }
 }
 */
+
+// open modal
+document.getElementById('regNow').addEventListener('click',
+function() {
+  event.preventDefault();
+
+    document.querySelector('.reg-modal').style.display = 'flex';
+});
+
+// close modal
+document.querySelector('.close').addEventListener('click',
+function() {
+    document.querySelector('.reg-modal').style.display = 'none';
+});
+
+
+
+document.getElementById('passNow').addEventListener('click',
+function() {
+    document.querySelector('.passReset').style.display = 'flex';
+});
+
+document.getElementsByClassName('close2').addEventListener('click', 
+function() {
+    document.querySelector('.passReset').style.display = 'none';
+});
+
 loginForm.addEventListener('submit', loginFormHandler);
 
 /*
