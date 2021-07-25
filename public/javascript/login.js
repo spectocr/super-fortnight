@@ -1,14 +1,10 @@
 const loginForm = document.querySelector('.login-form');
-
-
-
+console.log(loginForm);
 
 async function loginFormHandler(event) {
   event.preventDefault();
-
-
-  console.log(loginForm);
-  const email = loginForm.querySelector('input[name="uname"]').value;
+ 
+  const email = loginForm.querySelector('[name="uname"]').value;
   console.log(email);
   //const password = loginForm.querySelector('[name="pwd"]').value;
   
@@ -60,7 +56,7 @@ async function signupFormHandler(event) {
   }
 }
 */
-//loginForm.addEventListener('submit', loginFormHandler);
+loginForm.addEventListener('submit', loginFormHandler);
 
 /*
 
