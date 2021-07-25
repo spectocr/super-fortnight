@@ -1,11 +1,14 @@
 const loginForm = document.querySelector('.login-form');
 console.log(loginForm);
 
+const uname = document.querySelector("#uname").value;
+console.log(uname);
+
 async function loginFormHandler(event) {
   event.preventDefault();
  
-  const email = loginForm.querySelector('[name="uname"]').value;
-  console.log(email);
+  const uname = document.querySelector("#uname").value;
+  console.log(uname);
   //const password = loginForm.querySelector('[name="pwd"]').value;
   
   //console.log(password);
