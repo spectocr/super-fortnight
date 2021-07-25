@@ -1,20 +1,13 @@
 const loginForm = document.querySelector('.login-form');
 console.log(loginForm);
 
-const uname = document.querySelector("#uname").value;
-  console.log(uname);
-
-//const uname = loginForm.querySelector("#uname").value;
-console.log(uname);
-
 async function loginFormHandler(event) {
   event.preventDefault();
  
-  const uname = document.querySelector("#uname").value;
+  const email = loginForm.querySelector('[name="uname"]').value;
   console.log(uname);
-  //const password = loginForm.querySelector('[name="pwd"]').value;
-  
-  //console.log(password);
+  const password = loginForm.querySelector('[name="pwd"]').value;
+  console.log(password);
   
 
 
@@ -79,17 +72,7 @@ function() {
 
 
 
-document.getElementById('passNow').addEventListener('click',
-function() {
-    document.querySelector('.passReset').style.display = 'flex';
-});
-
-document.getElementsByClassName('close2').addEventListener('click', 
-function() {
-    document.querySelector('.passReset').style.display = 'none';
-});
-
-loginForm.addEventListener('submit', loginFormHandler);
+document.getElementById('login').addEventListener('click', loginFormHandler );
 
 /*
 
