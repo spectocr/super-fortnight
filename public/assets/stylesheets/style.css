@@ -1040,6 +1040,29 @@ nav a:hover {
 .col-12 {
   flex: 0 0 100%;
 }
+.text-right {
+  text-align: right;
+  width: 90%;
+}
+
+.center {
+  padding-top: 10px;
+  margin: auto;
+  width: 60%;
+}
+.btn-no-style {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
 
 /* col-sm */
 @media screen and (min-width: 640px) {
