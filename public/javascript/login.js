@@ -28,7 +28,7 @@ async function loginFormHandler(event) {
     }
   }
 }
-/*
+
 async function signupFormHandler(event) {
   event.preventDefault();
 
@@ -54,7 +54,7 @@ async function signupFormHandler(event) {
     }
   }
 }
-*/
+
 
 // open modal
 document.getElementById('regNow').addEventListener('click',
@@ -74,7 +74,6 @@ function() {
 
 document.getElementById('login').addEventListener('click', loginFormHandler );
 
-/*
 
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
-*/
+
+document.querySelector('.reg-button').addEventListener('click', signupFormHandler);
