@@ -7,8 +7,8 @@
       <form class="new-post-form">
 
         <div class="mb-3">
-          <label for="post-title" class="form-label">Title</label>
-          <input type="text" id="post-title" name="post-title" class="form-control" />
+          <label for="post-title" class="form-label">New Issue</label>
+          <input type="text" id="post-title" name="post-title" class="form-control" placeholder="Tell Us Your Problem" />
         </div>
         <div class="mb-3">
           <label for="post-url" class="form-label">GitHub Url: </label>
@@ -25,12 +25,12 @@
     <div class="col-6">
       {{#if posts.length}}
 
-      <h2>Your Posts</h2>
+      <h2>Your Issues</h2>
       <ol>
         {{#each posts as |post|}}
         <li>
           {{> post-info post}}
-          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit issue</a>
         </li>
         {{/each}}
       </ol>

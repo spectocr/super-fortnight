@@ -1,14 +1,21 @@
 <form>
-  <div class="login-form">
+  <div class="login-form" style="text-align: center;">
     <hr />
-    <div class="container">
-      <label for="uname"><strong>Email</strong></label>
-      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-      <label for="password-login"><strong>Password</strong></label>
-      <input type="password" name="pwd" placeholder="Enter Password" id="pwd" required>
+
+
+    <div class="mb-3">
+      <label for="uname" class="form-label"><strong>Email</strong></label>
+      <input id="uname" type="text" placeholder="Enter Email" name="uname" class="form-control">
     </div>
-    <button type="submit" id="login">Login</button>
-    <button type="submit" class="regNow" id="regNow">Register</button>
+    <div class="mb-3">
+      <label for="password-login" class="form-label"><strong>Password</strong></label>
+      <input type="password" class="form-control" name="pwd" placeholder="Enter Password" id="pwd" required>
+    </div>
+
+
+    <button type="submit" id="login" class="btn btn-primary btn-lg">Login</button><br>
+    <button type="submit" class="regNow btn btn-primary btn-lg" id="regNow">Register</button>
+  </div>
 
 </form>
 
@@ -22,9 +29,12 @@
       <div class="close">+</div>
       <img src="./assets/images/icons8-user-96.png" alt="">
       <form>
+        
         <input type="text" placeholder="username">
         <input type="text" placeholder="password">
         <input type="text" placeholder="password confirm">
+
+
         <input type="checkbox" id="reg-skills" name="reg-skills1" value="javascript">
         <label for="reg-skills1">Javascript</label>
         <input type="checkbox" id="reg-skills" name="reg-skills2" value="javascript">
