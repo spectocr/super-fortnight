@@ -30,14 +30,14 @@ main {
   height: 100%;
 
 }
-
+/* 
  form {
       /* border: 5px solid #f1f1f1; */
-      position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-      }
+      /* position: absolute;
+    top: 50%; */
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+      } */
       input[type=text], input[type=password] {
       width: 100%;
       padding: 16px 8px;
@@ -68,6 +68,7 @@ main {
       margin: auto;
       }
       .container {
+        
       padding: 16px 0;
       text-align:left;
       }
@@ -356,7 +357,7 @@ nav a:hover {
   height: 18px;
   border: 2px solid var(--secondary);
   border-radius: 100%;
-  background: #fff;
+  /* background: #fff; */
 }
 [type='radio']:checked + label:after,
 [type='radio']:not(:checked) + label:after {
