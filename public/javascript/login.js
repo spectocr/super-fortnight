@@ -61,13 +61,13 @@ document.getElementById('regNow').addEventListener('click',
 function() {
   event.preventDefault();
 
-    document.querySelector('.reg-modal').style.display = 'flex';
+    document.querySelector('.modal').style.display = 'flex';
 });
 
 // close modal
 document.querySelector('.close').addEventListener('click',
 function() {
-    document.querySelector('.reg-modal').style.display = 'none';
+    document.querySelector('.modal').style.display = 'none';
 });
 
 
