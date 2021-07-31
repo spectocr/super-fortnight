@@ -1,11 +1,11 @@
-# Buddy Finder
+# CodePal
 ## Description
 This goal of this web application is to create a place for developers to connect with other developers to work collaboratively on a project based on skillset. 
 ## Walkthrough
 Users will first register with an email, username, and password as well as select from a pre-made list of developer skills. Once the user creates their account they will log in and be brought to a home page where they can edit their user information. On this page the user will be able to search for other users by skill to find a developer to work with on a prospective project. 
-Video walkthrough: 
+
 ## Presentation: 
-Link: https://docs.google.com/presentation/d/10RyjWbxReYL9QkDEAI3fzEas6mBsJLuGVO2qmQBkOkc/edit?usp=sharing
+Link: https://docs.google.com/presentation/d/1DOo29Jei3B9I_x32T7ryT5t9aEVavdiVWiCFoXfGq4c/edit#slide=id.ge6531fe858_0_333
 ## Dependencies
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
@@ -18,7 +18,8 @@ Link: https://docs.google.com/presentation/d/10RyjWbxReYL9QkDEAI3fzEas6mBsJLuGVO
     "sequelize": "^6.6.5"
 ## Creators
 D. Walsh: https://github.com/Dwalsh93
-J. Vilches: 
+J. Vilches: https://github.com/JaimeVilches87
 M. Lopez: https://github.com/mlopez94
 C. Spector: https://github.com/spectocr
 GitHub Repository: https://github.com/spectocr/super-fortnight
+Heroku Link: https://secret-ravine-72636.herokuapp.com/dashboard
