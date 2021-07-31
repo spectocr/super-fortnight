@@ -1,10 +1,32 @@
-<main style="background-color:transparent;" class="container">
+<main class="container-fluid">
   <h2 style="text-align:center"> Welcome {{username}} </h2>
   <div class="row">
     <div class="col-6">
-      <h2>Create New Post</h2>
 
-      <form class="new-post-form">
+      <div class="card clear" style="width: 25rem;">
+        <img src="./assets/images/profile.jpg" class="card-img-top" alt="profile default">
+        <div class="card-body center">
+          <h5 class="card-title">Availabilty</h5>
+          <p class="card-text">
+            Days: Mon - Fri <br>
+            Times: 2pm - 9pm
+
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Strongest skill: CSS</li>
+          <li class="list-group-item">Weakest skill: APIs</li>
+          <li class="list-group-item">Favorite Module: 12</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Instagram</a>
+          <a href="#" class="card-link">Twitter</a>
+        </div>
+      </div>
+
+      <h2 class="white">Create New Post</h2>
+
+      <form class="new-post-form white">
 
         <div class="mb-3">
           <label for="post-title" class="form-label">New Issue</label>
@@ -14,8 +36,9 @@
           <label for="post-url" class="form-label">GitHub Url: </label>
           <input id="post-url" name="post-url" class="form-control" placeholder="user-name@github.com" />
         </div>
-        <button type="submit" class="btn">Create</button>
+        <button type="submit" class="btn btn-primary">Create</button>
       </form>
+      
     </div>
 
 

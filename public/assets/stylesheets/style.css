@@ -1,5 +1,5 @@
 :root {
-  --primary: #12385931;
+  --primary: #ffffff31;
   --secondary: #68463c;
   --tertiary: #68463c;
   --quaternary: #8c7503;
@@ -17,11 +17,18 @@
 width: 40%;
 
 }
-
-.login-form {
-  text-align: center;
-
+.white {
+  color: #ffffff;
 }
+
+.clear {
+  background-color:transparent
+}
+
+.center {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
