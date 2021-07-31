@@ -1,45 +1,114 @@
-<form>
-  <h1>Login</h1>
-  <div class="login-form">
+<form class="login-form center">
+  <div>
     <hr />
-    <div class="container">
-      <label for="uname"><strong>Email</strong></label>
-      <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-      <label for="password-login"><strong>Password</strong></label>
-      <input type="password" name="pwd" placeholder="Enter Password" id="pwd" required>
+
+
+
+    <div class="mb-3">
+      <h4>
+        <label for="uname"><strong>Email</strong></label>
+      </h4>
+
+      <input class="login-box form-control-lg" id="uname" type="text" placeholder="Enter Email" name="uname">
     </div>
-    <button type="submit" id="login">Login</button>
-    <button type="submit" class="regNow" id="regNow">Register</button>
+    <div class="mb-3">
+      <h4>
+        <label for="password-login"><strong>Password</strong></label>
+      </h4>
+      <input class="login-box form-control-lg" type="password" name="pwd" placeholder="Enter Password" id="pwd"
+        required>
+
+    </div>
+    <br>
+
+    <div class="d-grid gap-2 col-3 mx-auto">
+      <button type="submit" id="login" class="btn btn-primary">Login</button><br>
+      <button type="submit" class="regNow btn btn-primary" id="regNow">Register</button>
+    </div>
+
+  </div>
 
 </form>
 
 
 
 <!-- Modal Section -->
-<section>
-
-  <div class="reg-modal">
-    <div class="reg-content">
-      <div class="close">+</div>
-      <img src="./assets/images/icons8-user-96.png" alt="">
-      <form>
-        <input type="text" placeholder="username">
-        <input type="text" placeholder="password">
-        <input type="text" placeholder="password confirm">
-        <input type="checkbox" id="reg-skills" name="reg-skills1" value="javascript">
-        <label for="reg-skills1">Javascript</label>
-        <input type="checkbox" id="reg-skills" name="reg-skills2" value="javascript">
-        <label for="reg-skills2">HTML</label>
-        <input type="checkbox" id="reg-skills" name="reg-skills3" value="javascript">
-        <label for="reg-skills3">CSS</label>
-        <input type="checkbox" id="reg-skills" name="reg-skills4" value="javascript">
-        <label for="reg-skills4">MySQL</label></br>
-        <a href="" class="reg-button">Submit</a>
 
 
-      </form>
+
+<div class="modal animate__animated animate__bounceInDown" id="#exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Registration</h5>
+        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form class="row g-3">
+
+          <div class="col-md-6">
+            <label for="inputPassword6" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username-signup" placeholder="Username">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword6" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password-signup" placeholder="Password">
+
+          </div>
+
+          <div class="col-12">
+            <label for="inputPassword6" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email-signup" placeholder="Email">
+          </div>
+
+
+          {{!-- <input type="text" placeholder="username" id="username-signup">
+          <input type="text" placeholder="password" id="password-signup">
+          <input type="text" placeholder="email" id="email-signup"> --}}
+          <div>
+            <fieldset class="row mb-3 ">
+              <legend class="col-form-label col-sm-4 pt-0">Skills:</legend>
+              <div class="col-sm-8">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="reg-skills" name="reg-skills1" value="javascript">
+                  <label class="form-check-label" for="reg-skills1">Javascript</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="reg-skills" name="reg-skills2" value="javascript">
+                  <label class="form-check-label" for="reg-skills2">HTML</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="reg-skills" name="reg-skills3" value="javascript">
+                  <label class="form-check-label" for="reg-skills3">CSS</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="reg-skills" name="reg-skills4" value="javascript">
+                  <label class="form-check-label" for="reg-skills4">MySQL</label></br>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">
+          <a href="">Submit</a>
+        </button>
+      </div>
+
 
     </div>
   </div>
+</div>
 
-  <script src="/javascript/login.js"></script>
+<script src="/javascript/login.js"></script>

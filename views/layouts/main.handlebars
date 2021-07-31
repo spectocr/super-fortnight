@@ -4,37 +4,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buddy Finder</title>
-  
+
+  <title>CodePal</title>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
+<<<<<<< HEAD
   {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> --}}
+=======
+  
+>>>>>>> 2409c1a50fbbbc7ce2a4065d8fe9e2e021ef7564
 </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1 class="center">
-        <a href="/">BuddyFinder</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
+<body class="clear">
+
+  <div class="container-fluid">
+  
+      <nav class="row align-items-end">
+        <div class="col">
+        {{!-- {{#if loggedIn}} --}}
+        <h6>
         <a href="/dashboard">My Profile</a>
-        <button id="logout" class="btn-no-style text-right">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+        </h6>
+        {{!-- {{else}}
+        <a href="/login">login</a> --}}
+        </div>
+
+        <div class="col text-center">
+        <h1 class="animate__animated animate__bounceInDown">
+        <a style="text-decoration: none" href="/">CodePal</a>
+      </h1>
+        </div>
+
+        <div class="col text-end">
+          <h6>
+        <a id="logout" href="/dashboard">Logout</a>
+        </h6>
+        </div>
+        {{!-- {{/if}} --}}
       </nav>
-    </header>
+    
     <main>
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
-  {{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+  {{!-- {{#if loggedIn}} --}}
+  <script src="/javascript/logout.js"></script>
+
+  {{!-- {{/if}} --}}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

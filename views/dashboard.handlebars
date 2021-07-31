@@ -1,31 +1,66 @@
-<section>
-  <h2>Create New Post</h2>
+<main class="container-fluid">
+  <h2 style="text-align:center"> Welcome {{username}} </h2>
+  <div class="row">
+    <div class="col-6">
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <div class="card clear" style="width: 25rem;">
+        <img src="./assets/images/profile.jpg" class="card-img-top" alt="profile default">
+        <div class="card-body center">
+          <h5 class="card-title">Availabilty</h5>
+          <p class="card-text">
+            Days: Mon - Fri <br>
+            Times: 2pm - 9pm
+
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Strongest skill: CSS</li>
+          <li class="list-group-item">Weakest skill: APIs</li>
+          <li class="list-group-item">Favorite Module: 12</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Instagram</a>
+          <a href="#" class="card-link">Twitter</a>
+        </div>
+      </div>
+
+      <h2 class="white">Create New Post</h2>
+
+      <form class="new-post-form white">
+
+        <div class="mb-3">
+          <label for="post-title" class="form-label">New Issue</label>
+          <input type="text" id="post-title" name="post-title" class="form-control" placeholder="Tell Us Your Problem" />
+        </div>
+        <div class="mb-3">
+          <label for="post-url" class="form-label">GitHub Url: </label>
+          <input id="post-url" name="post-url" class="form-control" placeholder="user-name@github.com" />
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </form>
+      
     </div>
-    <div>
-      <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
+
+
+
+
+
+
+    <div class="col-6">
+      {{#if posts.length}}
+
+      <h2>Your Issues</h2>
+      <ol>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit issue</a>
+        </li>
+        {{/each}}
+      </ol>
+
+      {{/if}}
     </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
-
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
-
+  </div>
+</main>
 <script src="/javascript/add-post.js"></script>

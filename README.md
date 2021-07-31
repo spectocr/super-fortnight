@@ -1,4 +1,4 @@
-# CodePal
+# Buddy Finder
 ## Description
 This goal of this web application is to create a place for developers to connect with other developers to work collaboratively on a project based on skillset. 
 ## Walkthrough
