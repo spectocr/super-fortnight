@@ -1,6 +1,8 @@
 # CodePal
 ## Description
 This goal of this web application is to create a place for developers to connect with other developers to work collaboratively on a project based on skillset. 
+
+ ![alt text](./ss.png)
 ## Walkthrough
 Users will first register with an email, username, and password as well as select from a pre-made list of developer skills. Once the user creates their account they will log in and be brought to a home page where they can edit their user information. On this page the user will be able to search for other users by skill to find a developer to work with on a prospective project. 
 
